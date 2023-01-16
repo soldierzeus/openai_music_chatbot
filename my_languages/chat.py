@@ -2,6 +2,7 @@
 import os
 import openai
 from playsound import playsound
+import youtubemusic_download_mp3
 
 # 자신이 OPENAI 계정에 있는 API-KEY를 복사하여서 여기에다가 붙여 놓습니다.
 openai.api_key = input("Enter your API-KEY : ")
@@ -23,6 +24,7 @@ while True:
   print(response["choices"][0]["text"])
   my_prompt += response["choices"][0]["text"]
   if "Enjoy" in my_prompt:
+    youtubemusic_download_mp3.download_ytvid_as_mp3(chat_answer=chat_answer)
     playsound(f"my_languages\\music_resources\\{chat_answer}.mp3")
     
     # 음원 재생이 마치면 이 프로그램은 종료됩니다.
