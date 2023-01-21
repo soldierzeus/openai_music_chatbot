@@ -1,0 +1,14 @@
+.env
+/.idea
+/__pycache__
+*.pyc
+openaivenv/
+dist/
+__pycache__/
+instance/
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+*.egg-info/
+.DS_STORE
