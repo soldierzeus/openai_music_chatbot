@@ -20,7 +20,7 @@
 5. require_module 텍스트 파일에 있는 모듈을 설치하세요.
 
    ```git bash, Windows 명령 프롬프트
-   pip install -r requirements.txt
+   pip install -r require_module.txt
    ```
 
 6. 가상 변수 파일 .env.example를 .env로 변경하세요.
